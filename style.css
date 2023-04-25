@@ -1,10 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+}
 
 body {
   background-color: salmon;
@@ -12,7 +14,8 @@ body {
   height: calc(100vh - 5rem);
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+}
 
 .clock {
   z-index: 1;
@@ -22,62 +25,73 @@ body {
   height: 25rem;
   border-radius: 50%;
   font-size: 2rem;
-  box-shadow: 0 0 4rem -1rem #3f463b82; }
-  .clock__horizontal {
-    margin: 48% auto;
-    width: 90%;
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 2rem; }
-  .clock__vertical {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
-    height: 95%;
-    margin: 5px 0 0;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column; }
-  .clock .arrow::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 2.2rem;
-    height: 2.2rem;
-    border-radius: 50%;
-    background-color: green;
-    z-index: 4; }
-  .clock .arrow {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-    .clock .arrow--1 {
-      position: absolute;
-      top: 30%;
-      left: 25%;
-      width: 9rem;
-      background-color: #fff;
-      height: 3px;
-      transform-origin: left; }
-    .clock .arrow--2 {
-      position: absolute;
-      top: 30%;
-      left: 25%;
-      width: 9rem;
-      background-color: pink;
-      height: 3px;
-      transform-origin: left; }
-    .clock .arrow--3 {
-      position: absolute;
-      top: 30%;
-      left: 25%;
-      width: 9rem;
-      background-color: blue;
-      height: 3px;
-      transform-origin: left; }
+  box-shadow: 0 0 4rem -1rem #3f463b82;
+}
+.clock__horizontal {
+  margin: 45% auto;
+  width: 90%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+.clock__vertical {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  height: 95%;
+  margin: 5px 0 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.clock .arrow::before {
+  content: '';
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-40%, -40%);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: green;
+  z-index: 4;
+}
+.clock .arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.clock .arrow--1 {
+  background-color: #fff;
+  width: 5px;
+  height: 75px;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  border-radius: 50% 50% 0 0;
+}
+.clock .arrow--2 {
+  background-color: pink;
+  width: 5px;
+  height: 85px;
+  position: absolute;
+  bottom: 50%;
+  transform-origin: bottom center;
+  border-radius: 50% 50% 0 0;
+}
+.clock .arrow--3 {
+  background-color: blue;
+  width: 5px;
+  height: 85px;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  border-radius: 50% 50% 0 0;
+}
